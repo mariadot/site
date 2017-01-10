@@ -1,0 +1,14 @@
+siteTitle = "Blog by Jane Doe"
+siteDescr = "Front end developer"
+siteAuthor = "Maria Dot"
+
+siteTelegramUrl = "#"
+siteTwitterUrl = "#"
+siteGithubUrl = "#"
+siteEmailUrl = "#"
+siteRssUrl = "#"
+siteVkUrl = "#"
+
+googleAnalyticsId = ""
+
+linkPrefix = "/gatsby-starter-lumen"
