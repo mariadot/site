@@ -9,7 +9,7 @@ import { config } from 'config'
 import SitePost from '../components/SitePost'
 import SiteSidebar from '../components/SiteSidebar'
 
-class SiteIndex extends React.Component {
+class SiteArticles extends React.Component {
     render() {
         const pageLinks = []
         // Sort pages.
@@ -37,7 +37,7 @@ class SiteIndex extends React.Component {
                         <span className="categories">
                           { categories.map((category) => (<span className='blog-categories'>{category}</span>))}
                         </span>
-                        <span className='read-more'>
+                        <span className='read-more basic-button'>
                         <Link  to={ prefixLink(page.path) }> 
                           ...
                         </Link>
@@ -63,8 +63,8 @@ class SiteIndex extends React.Component {
     }
 }
 
-SiteIndex.propTypes = {
+SiteArticles.propTypes = {
     route: React.PropTypes.object,
 }
 
-export default SiteIndex
+export default SiteArticles

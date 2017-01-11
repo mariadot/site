@@ -28,7 +28,7 @@ body {
 	color: #161b20;
 }
 
-h1, h2, h3, h4, h5, h6, time {
+h1, h2, h3, h4, h5, h6, time,  .basic-button, .sidebar a {
 	font-family: 'Oxygen', sans-serif;
 }
 
@@ -52,12 +52,16 @@ a:hover {
 	text-align: center;
 }
 
-.read-more {
+ .basic-button {
 	border: solid 1px #d11149;
 	border-radius: 4px;
 	padding: 5px 10px;
-	font-size: 1.3em;
 	font-weight: bold;
+	text-decoration: none;
+}
+
+.read-more, .gohome {
+	font-size: 1.3em;
 }
 
 .read-more a {
@@ -185,7 +189,7 @@ a:hover {
 
 /* Main  */
 
-.main-inner, .blog-single {
+.main-inner, .blog-page {
 	padding: 15px 50px 15px;
 }
 
@@ -206,7 +210,6 @@ main p {
 	margin:0;
 }
 
-
 .blog-post time, .blog-post .blog-categories {
 	font-size: 0.9em;
 }
@@ -224,5 +227,47 @@ main p {
 .read-more {
 	float: right;
 }
-
 /* *********** */
+
+/* Projects */
+
+.projects-page {
+	padding: 15px;
+}
+
+.projects-list, .projects-page h1 {
+	max-width: 80%;
+	margin:20px auto;
+}
+
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project {
+	width: 250px;
+	height: 250px;
+	margin:0 10px 10px 0;
+	padding: 10px;
+	text-align: center;
+	background-color: #14191e;
+	color: white;
+}
+
+.project p {
+	text-align: center;
+}
+
+.project-links {
+	display: flex;
+	flex-direction:column;
+}
+
+.project-links a:first-child {
+	margin-bottom: 10px;
+}
+
+/* ********* */
+
+

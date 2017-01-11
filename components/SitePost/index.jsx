@@ -14,32 +14,29 @@ class SitePost extends React.Component {
         const {route} = this.props
         const post = route.page.data
         const home = (
-        <div>
-          <Link className='gohome' to={ prefixLink('/') }> All Articles
-          </Link>
-        </div>
+          <span>
+            <Link className='gohome basic-button' to={ prefixLink('/articles/') }> All Articles
+            </Link>
+          </span>
         )
-
         return (
-            <div>
+            <div className="blog-page">
               { home }
               <div className='blog-single'>
                 <div className='text'>
                   <h1>{ post.title }</h1>
-                  <div dangerouslySetInnerHTML={ {    __html: post.body} } />
                   <div className='date-published'>
                     <em>Published { moment(post.date).format('D MMM YYYY') }</em>
                   </div>
+                  <hr/>
+                  <div dangerouslySetInnerHTML={ {    __html: post.body} } />
                 </div>
-                <div className='footer'>
-                  <ReadNext post={ post } {...this.props}/>
-                  <hr></hr>
+                <hr/>
+                <footer>
                   <p>
-                    { config.siteDescr }
-                    <a href={ config.siteTwitterUrl }>
-                      <br></br> <strong>{ config.siteAuthor }</strong> on Twitter</a>
+                    { config.siteAuthor }
                   </p>
-                </div>
+                </footer>
               </div>
             </div>
             );
