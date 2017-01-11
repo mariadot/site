@@ -11,6 +11,17 @@ dark gray 3a3238
 */
 /**/
 
+.react-logo {
+  animation: logo-spin infinite 20s linear;
+  height: 80px;
+  margin:0 auto;
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -142,7 +153,7 @@ a:hover {
 }
 
 .blog-nav ul li a.current {
-	text-decoration: underline;
+	border-bottom: solid 3px #d11149;
 }
 .blog-nav ul li a:hover {
 	border-bottom: 1px solid;
@@ -157,7 +168,6 @@ a:hover {
 }
 .blog-social ul {
 	list-style: none;
-	
 	padding: 0;
 	margin: 10px 0;
 }
@@ -189,12 +199,48 @@ a:hover {
 
 /* Main  */
 
-.main-inner, .blog-page {
+.main-inner, .blog-page, .index-content {
 	padding: 15px 50px 15px;
 }
 
-main p {
+.blog-post p, .blog-page p {
 	text-align: justify;
+}
+
+.languages {
+	padding: 50px;
+}
+
+.languages div {
+	flex:1;
+	text-align: center;
+	padding: 20px;
+}
+
+.languages .circle {
+	margin:0 auto;
+	width: 100px;
+	height: 100px;
+	font-size: 2em;
+	font-family: 'Oxygen';
+	text-transform: uppercase;
+	line-height: 2em;
+	border-radius: 50%;
+	color: white;
+	background-color: #14191e;
+}
+
+.tools, .languages {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tools div {
+	color: #14191e;
+	width: 250px;
+	height: 250px;
+	padding: 100px 20px;
+	
 }
 
 /* ****** */
@@ -249,7 +295,7 @@ main p {
 	width: 250px;
 	height: 250px;
 	margin:0 10px 10px 0;
-	padding: 10px;
+	padding: 15px;
 	text-align: center;
 	background-color: #14191e;
 	color: white;
